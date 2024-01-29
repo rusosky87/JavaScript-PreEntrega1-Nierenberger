@@ -26,7 +26,7 @@ function Iniciar() {
             "Tienes " + Intentos + " intentos. Escribe un número.");
     if (númeroEjemplares == númeroJugador) {
         alert("¡Correcto! Gracias por jugar.");
-        breack;
+        break;
         }
     if (númeroJugador !== númeroEjemplares) {
         alert("¡Fallaste!");
