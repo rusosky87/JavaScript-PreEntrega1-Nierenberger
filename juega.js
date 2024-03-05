@@ -1,10 +1,9 @@
-var numIntentos = 0;
-var intentos = document.getElementById("intentos");
-var numeroIngresado = document.getElementById("numero");
-var btnAdivinar = document.getElementById("btnAdivinar");
-var btnReiniciar = document.getElementById("btnReiniciar");
-var mensaje = document.getElementById("mensaje");
-var numeroSecreto = 0;
+let numIntentos = 0;
+let intentos = document.getElementById("intentos");
+let numeroIngresado = document.getElementById("numero");
+let btnAdivinar = document.getElementById("btnAdivinar");
+let btnReiniciar = document.getElementById("btnReiniciar");
+let mensaje = document.getElementById("mensaje");
 
 function iniciar(){
     numIntentos = 0;
@@ -18,7 +17,7 @@ function iniciar(){
 function adivinar(){
     let numeroEjemplares = 5;
     if(isNaN(numeroIngresado.value) || numeroIngresado.value > 10 || numeroIngresado.value < 1){
-        mensaje.textContent = "¡Debes ingresar un numero válido!";
+        mensaje.textContent = "¡Debes ingresar un número válido!";
         numeroIngresado.value = "";
 
     }else{
@@ -34,7 +33,7 @@ function adivinar(){
             terminar();
 
     }else{
-            mensaje.innerHTML = "Lo lamento, has perdido.<br>";
+            mensaje.innerHTML = "Lo siento, has perdido.<br>";
             terminar();
         }       
     }

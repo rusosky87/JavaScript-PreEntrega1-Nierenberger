@@ -90,3 +90,11 @@ h2{
     width: 40%;
     margin-left: 30%;
 }
+.bienvenido {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 0.7px black;
+    background-position: center;
+    background-color: rgb(212, 212, 149, 0.5);
+}
