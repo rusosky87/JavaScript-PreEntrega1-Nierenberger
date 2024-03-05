@@ -82,3 +82,11 @@ h2{
     background-color: coral;
     font-size: 25px;
 }
+.juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 40%;
+    margin-left: 30%;
+}

@@ -29,5 +29,37 @@ function mostrarFichas (Libros) {
                             `
         baúlDeLibros.appendChild (ficha);
     })
+    
 }
+addEventListener('click', () => agregarAlCarrito(Libro));
 mostrarFichas (LibrosArray);
+
+
+function agregarAlCarrito(Libro) {
+    const itemsCarrito = JSON.parse(localStorage.getItem('CARRO')) || [];
+    itemsCarrito.push(Libro);
+    localStorage.setItem('CARRO', JSON.stringify(itemsCarrito));
+    renderizarCarrito();
+}
+
+function renderizarCarrito() {
+    const itemsCarrito = JSON.parse(localStorage.getItem('CARRO')) || [];
+    const listaCarrito = document.getElementById('items-carrito');
+
+    listaCarrito.innerHTML = '';
+
+    itemsCarrito.forEach(Libro => {
+    const elementoCarrito = document.createElement('li');
+
+    elementoCarrito.textContent = `${Libro.nombre} - $${Libro.precio}`;
+    listaCarrito.appendChild(elementoCarrito);
+    });
+}
+
+
+window.addEventListener('load', () => {
+    renderizarCarrito();
+});
+
+
+
