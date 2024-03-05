@@ -1,8 +1,21 @@
 body{
-    background-image: url(./img/Biblioteca01.jpg);
+    background-image:url(./img/Biblioteca01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.nav-bar{
+    height: 30px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link {
+    display: inline-block;
+    color: blanchedalmond;
+    padding: 20px;
+    text-decoration: none;
 }
 h1{
     font-size: 5rem;
@@ -47,8 +60,25 @@ h2{
     color: rgb(99, 72, 72);
     font-size: 30px;
 }
-
 .Tapas {
     width: 60%;
     padding-left: 20%;
+}
+.selector {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+.opciones {
+    background-color: cornflowerblue;
+    font-size: 20px;
+}
+.contenido-de-las-opciones {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    border-style: double;
+    justify-content: center;
+    background-color: coral;
+    font-size: 25px;
 }

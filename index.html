@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INICIO</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <header>
-    </header>
-    <main>
-        <h1>ORGANIZADOR DE LIBROS</h1>
-        <h2>En la base de datos se almacena la información de los distintos ejemplares.</h2>
-        <h2>Puedes elegir entre ordenarlos alfabéticamente por nombre de autor, por nombre de género o por fecha de lanzamiento.</h2>
-        <h2>De 1 a 10, ¿te animas a adivinar cuántos ejemplares tiene nuestro archivo?</h2>
-        <div class="div-botón"><input class="botón" type="button" value="INTÉNTALO" id="botón"></div>
-        <section id="baúl-de-libros" class="baúl">
-            
-        </section>
-    </main>
-    <script src="index.js"></script>
+  <header>
+    <nav class="nav-bar">
+            <a class="nav-link" href="./index.html">INICIO</a>
+            <a class="nav-link" href="./pages/baúl-de-libros.html">BAÚL DE LIBROS</a>
+            <a class="nav-link" href="./pages/juega.html">JUEGA</a>
+    </nav>
+</header>
+<main>
+    <h1>ORGANIZADOR DE LIBROS</h1>
+    <h2>En la base de datos se almacena la información de los distintos ejemplares.</h2>
+    <h2>¿En qué orden prefieres los libros?</h2>
+    
+    <div class="selector">
+      <select name="formasDeOrdenar" id="formasDeOrdenar" class="opciones">
+          <option value="-1">SELECCIONA</option>
+          <option value="1">Por nombre de autor</option>
+          <option value="2">Por nombre de género</option>
+          <option value="3">Por fecha de lanzamiento</option>
+      </select>
+    </div>
+    <div class="contenido-de-las-opciones">
+      <p id="forma-1">1.- BRADBURY, Ray - El Hombre Ilustrado - 1951<br>
+                      2.- CHRISTIE, Agatha - Muerte en el Nilo - 1 de Noviembre de 1937<br>
+                      3.- ENRIQUEZ, Mariana - Nuestra Parte de Noche - 2019<br>
+                      4.- TOLKIEN, J.R.R. - El Hobbit - 21 de Septiembre de 1937<br>
+                      5.- SARAMAGO, José - La Balsa de Piedra - 1986</p>
+      <p id="forma-2">1.- CIENCIA FICCIÓN - El Hombre Ilustrado, Ray Bradbury<br> 
+                      2.- LITERATURA FANTÁSTICA - El Hobbit, J.R.R. Tolkien<br>
+                      3.- POLICIAL - Muerte en el Nilo, Agatha Christie<br>
+                      4.- REALISMO MÁGICO - La Balsa de Piedra, José Saramago<br>
+                      5.- TERROR - Nuestra Parte de Noche, Mariana Enriquez</p>
+      <p id="forma-3">1.- 1937, SEPTIEMBRE 21 - El Hobbit<br>
+                      2.- 1937, NOVIEMBRE 1 - Muerte en el Nilo<br>
+                      3.- 1951 - El Hombre Ilustrado<br>
+                      4.- 1986 - La Balsa de Piedra<br>
+                      5.- 2019 - Nuestra Parte de Noche</p>
+    </div>
+</main>
+<script src="index.js"></script>
 </body>
 </html>
