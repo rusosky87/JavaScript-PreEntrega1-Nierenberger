@@ -15,7 +15,7 @@ function iniciar(){
 }
 
 function adivinar(){
-    let numeroEjemplares = 5;
+    let numeroEjemplares = 9;
     if(isNaN(numeroIngresado.value) || numeroIngresado.value > 10 || numeroIngresado.value < 1){
         mensaje.textContent = "¡Debes ingresar un número válido!";
         numeroIngresado.value = "";

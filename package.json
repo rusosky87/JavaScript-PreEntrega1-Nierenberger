@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "granim": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  }
+}
